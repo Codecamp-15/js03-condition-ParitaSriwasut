@@ -1,10 +1,17 @@
 let username = prompt("Enter your username...");
 let password = prompt("Enter your password...");
-
-if (username === "admin" && password === "1234") {
-  console.log("Hello" + " " + username);
+if (
+  username === null ||
+  username === "" ||
+  username.trim() === "" ||
+  username !== "john" ||
+  username !== "admin"
+) {
+  alert("username is required");
+} else if (username === "admin" && password === "1234") {
+  alert("Hello" + " " + username);
 } else if (username === "john" && password === "qwerty") {
-  console.log("Hello" + " " + username);
+  alert("Hello" + " " + username);
 } else {
-  console.log("Invalid username or password");
+  alert("Invalid username or password");
 }

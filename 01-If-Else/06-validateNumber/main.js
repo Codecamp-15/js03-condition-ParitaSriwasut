@@ -5,5 +5,5 @@ let sum = num1 + num2;
 if (sum === Number(sum)) {
   console.log(sum);
 } else {
-  console.log("Invalid number");
+  console.log("Invalid number!");
 }
